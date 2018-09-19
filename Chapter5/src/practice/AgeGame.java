@@ -8,7 +8,7 @@ public class AgeGame
 	public static void main(String[] args) 
 	{
 		int usersAge;
-		String result;
+		String result = null;
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Please enter your age to be insulted");
@@ -16,19 +16,19 @@ public class AgeGame
 		
 		if(usersAge <= 12) 
 		{
-			result = "Why are you here? Your a child";	
+			result = "Why are you here? Your a child.";	
 		}
 		else if (usersAge >= 13 && usersAge <=18) 
 		{
-			result = "You a teen now...great";
+			result = "You a teen now...great.";
 		}
 		else if (usersAge >= 19 && usersAge <= 25) 
 		{
-			result = "Get a job lazy";
+			result = "Get a job lazy.";
 		}
 		else if (usersAge >= 26 && usersAge <= 30) 
 		{
-			result = "your getting old";
+			result = "your getting old.";
 		}
 		else if (usersAge >= 31 && usersAge <= 40) 
 		{
@@ -42,7 +42,11 @@ public class AgeGame
 		{
 		result = "Your still here well i guess thats nice";	
 		}
-
+		else if (usersAge >= 61) 
+		{
+			result = "your not dead???";
+		}
+		displayMessage(result);
 	}
 	public static void displayMessage(String result) {
 		System.out.println(result);
