@@ -11,9 +11,9 @@ public class AscendingAndDescending
 		int num2;
 		int num3;
 		Scanner input = new Scanner(System.in);
-		int low;
-		int medium;
-		int high;
+		int low = 0;
+		int medium = 0;
+		int high = 0;
 		
 		System.out.print("Enter a Number");
 		num1 = input.nextInt();
