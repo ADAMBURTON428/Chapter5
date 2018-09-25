@@ -64,7 +64,7 @@ public class CondoSales2
 		}
 		
 		
-		System.out.print(" Are you sure of your choice.\n1-Yes \n2-No\n");
+		System.out.print("Are you sure of your choice.\n1-Yes \n2-No\n");
 		finalChoice = input.nextInt();
 		}while(1 != finalChoice);
 		
